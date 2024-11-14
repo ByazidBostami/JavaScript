@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js class</title>
+</head>
+<body>
+    <script>
+        //object
+        let gender="Male";
+        const name={
+            name:"Byazid",
+            age:25,
+            height:5.6,
+            personGender:gender
+
+        };
+        document.write("The given object is :"+JSON.stringify(name) +"<br>")
+        //array
+        const color=["Brown","Green","Red","Pink",6,5,true,545]
+        document.write("The given array is :"+color+"<br>")
+        document.write("The given array is :"+color[2]+"<br>")//call individual element
+
+        //date type
+        let date= new Date();
+        document.write("Today date and time is is :"+date+"<br>");
+        console.log(typeof(date));
+        //If else statement 
+        let result;
+        let age =20;
+        if (age>18){
+            result="Qualified for marriage"
+        }
+        else{
+            result="Not qualified for marriage"
+        }
+        document.write(result+"<br>")
+        //operators
+        let x=30;
+        let y=30;//for check the type use ===, for just check ==
+        let compare;
+        if (x===y){
+            compare="X and P are same in both ways"
+        }
+        else{
+            compare="X and p are not same in both ways"
+        }
+        document.write(compare+"<br>")
+
+        
+
+
+
+
+
+    </script>
+    <!--For take id "div#id", for class .class name-->
+    <div id="output"></div>
+<script>
+    let output = document.getElementById("output");
+    var count = 0;
+    output.innerHTML = "Starting the loop <br>";
+    while (count < 10) {
+        output.innerHTML += "current count: " + count + "<br>"; // Use += to append
+        count++;
+    }
+    output.innerHTML += "Loop Stopped <br>"; // Use += to append
+</script>
+
+</body>
+</html>

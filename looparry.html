@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrey For loop</title>
+</head>
+<body>
+    
+    <script>
+        var category=[
+            "Products",
+            "Items",
+            "Kids",
+            "Man",
+            "Health",
+            "Beauty",
+            "Woman",
+            "Fruits",
+        ];
+
+        var i;
+        for (i=0;i<category.length;i++){
+            document.write(category[i],"<br>");
+
+        }
+        
+    </script>
+
+
+    <script>
+        var category=[
+            "Products",
+            "Items",
+            "Kids",
+            "Man",
+            "Health",
+            "Beauty",
+            "Woman",
+            "Fruits",
+        ];
+
+        for (var item in category){
+            document.write(category[item],"<br>");
+        }
+
+    </script>
+
+    <script>
+        var person={
+            Name:"Byazid",
+            age:25,
+            height:5.7,
+            city:"Dhaka"
+
+        };
+
+        for(var item in person){
+            document.write(person[item],",<br>")
+
+        };
+
+    </script>
+    
+</body>
+</html>

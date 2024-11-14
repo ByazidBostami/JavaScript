@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Sort and slide</title>
+</head>
+<body>
+    <div class="sort_slide">
+        <script>
+            var num=[30,43,430,30,34,484,432,453,553,23]
+            num.sort().reverse();
+            document.write(num+"<br>");
+            var result=num.slice(3,6);
+            document.write(result+"<br>");
+            var arraySplice=["A","B","C","D","E"];
+           // arraySplice.splice(index,removeCount,item);
+           arraySplice.splice(2,1,"G");
+           arraySplice.splice(0,0,13);
+           document.write(arraySplice)
+        </script>
+    </div>
+    
+</body>
+</html>

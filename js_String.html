@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String</title>
+</head>
+<body>
+    <div class="js_string">
+        <script>
+            var country_1="Bangladesh"
+            var country_2="India"
+            var country_3="Pakisthan"
+            var country_4="      Uganda"
+            var check=country_1.charAt(5); //position check
+            var check_2=country_1.concat(country_2); //for add two string
+            var check3=country_1.indexOf("a");//index check 
+            var check4=country_1.lastIndexOf("a");// if  charecter doubble
+            var check5=country_2.replace("dia","-dian");//what should replace
+            var check6=country_3.substr(0,4);//0 index 
+            var check6=country_1.substring(6,9);//6 index ,9 length
+            var check7=country_1.toLocaleLowerCase();
+            var check8=country_1.toUpperCase();
+
+            document.write(check+"<br>");
+            document.write(check_2+"<br>");
+            document.write(check3+"<br>");
+            document.write(check4+"<br>");
+            document.write(check5+"<br>");
+            document.write(check6+"<br>");
+            document.write(check7+"<br>");
+            document.write(check8+"<br>");
+            document.write(country_4.trim());
+
+        </script>
+    </div>
+</body>
+</html>

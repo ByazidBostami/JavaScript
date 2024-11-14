@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js function</title>
+</head>
+<body>
+    
+
+    <script>
+        function addTwoNumber(){
+            var num1=10;
+            var num2=30;
+            var num3=num1+num2;
+            document.write(num3+"<br>")
+
+        }
+        addTwoNumber();
+        addTwoNumber();
+        addTwoNumber();
+    </script>
+
+    <script class="function peramiter">
+
+        function myNum(user){
+            if(user%2==0){;
+                document.write("This is a odd number<br>");
+            }
+            else{
+                document.write("This is even number<br>")
+
+            }
+
+        }
+        myNum(2);
+        myNum(120);
+        myNum(223);
+        myNum(849485777383);
+
+    </script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserInput</title>
+</head>
+<body>
+    <script>
+        function myFunction(num, num1) {
+            for (var i = 1; i < 100; i++) { // Start from 1 to avoid division by zero
+                if ((num + num1) % i == 0) {
+                    return "Pass";
+                }
+            }
+            return "Failed";
+        }
+
+        var user = prompt('Please input the first number:');
+        var user1 = prompt("Please input the second number:");
+        
+        // Parse input as integers
+        var num = parseInt(user);
+        var num1 = parseInt(user1);
+        
+        var result = myFunction(num, num1);
+        document.write(result);
+    </script>
+</body>
+</html>
+
+</body>
+</html>

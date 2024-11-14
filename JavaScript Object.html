@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <title>JavaScript Object</title>
+  </head>
+  <body>
+    <script>
+      // objects
+      let gender = "Male";
+      const person = {
+        name: "Anis",
+        age: 55,
+        height: 5.6,
+        personGender: gender,
+      };
+      document.write("The given object is: " + JSON.stringify(person) + "<br>");
+
+      //   array
+      const colors = ["Brown", "Red", "Pink", "Yellow", 7, true, 6.5];
+      document.write("The given array is: " + colors[4] + "<br>");
+
+      //   date type
+      let date = new Date();
+      document.write("The Today date and time is : " + date + "<br>");
+
+      // if else statement
+
+      let result;
+      let age = 20;
+      let x = 20;
+      let y = 6;
+      let z = x % y;
+      let p = "20";
+      let compare;
+
+      if (age >= 18) {
+        result = "Qualified for marriage";
+      } else {
+        result = "Not Qualified for marriage";
+      }
+      document.write(result + "<br>");
+      document.write(z + "<br>");
+
+      if (x === p) {
+        compare = "X and P are same in both ways";
+      } else {
+        compare = "X and P are not same in both ways";
+      }
+      document.write(compare + "<br>");
+    </script>
+
+    <div id="output"></div>
+
+    <!-- while loop -->
+    <script type="text/javascript">
+      let output = document.getElementById("output");
+      //   var count = 0;
+      //   change it to less than zero
+      output.innerHTML = "<br> Starting Loop <br>";
+      //   while (count < 5) {
+      //     output.innerHTML += "Current Count : " + count + "<br>";
+      //     count++;
+      //   }
+
+      // do {
+      //     output.innerHTML +="Current Count : " + count + "<br>";
+      //     count++;
+      // } while(count < 5)
+
+      for (let count = 0; count < 5; count++) {
+        if (count == 3) {
+          // continue;
+          //skip rest of the loop body
+          break;
+          // breaks out of loop completely
+        }
+        output.innerHTML += "Current Count : " + count + "<br>";
+      }
+
+      output.innerHTML += "Loop stopped!";
+    </script>
+    <p>Set the variable to a different value and then try...</p>
+
+    <p id="object"></p>
+    <script>
+    //   const myBook = {
+    //     title: "Perl",
+    //     author: "Mohtashim",
+    //     pages: 355,
+    //   };
+    var myBook = new Object()
+    myBook.title = "Perl",
+    myBook.author = "Mohtashim",
+    myBook.pages = 355
+    myBook.publisher = "Rokomari"
+      document.getElementById("object").innerHTML = "Book name is : " +myBook.title +
+        "<br>" +
+        "Book author is : " +
+        myBook.author +
+        "<br>" +
+        "Total pages : " +
+        myBook.pages + "<br>" +
+        "Publisher: " + myBook.publisher;
+    </script>
+  </body>
+</html>

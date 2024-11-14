@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserInput</title>
+</head>
+<body>
+    <script>
+        function myfunction(user) {
+            if (user % 2 == 0) {
+                document.write(user + " is an even number<br>");
+            } else {
+                document.write(user + " is an odd number<br>");
+            }
+
+            for (let count = 0; count < 100; count++) {
+                if (count % 2 == 0) {
+                    document.write(count + " is an even number<br>");
+                } else {
+                    document.write(count + " is an odd number<br>");
+                }
+            }
+        }
+
+        let user1 = prompt("Please input a number:");
+        myfunction(parseInt(user1));  // Parse the input as an integer
+    </script>
+</body>
+</html>
